@@ -1,0 +1,34 @@
+extends index.pug
+block head
+    +head("Zoofari / 404 Error")
+block landing
+    .landing_two 
+        .container
+            div 404 Error
+            div 
+                a(href="index.html") Home / 
+                a(href="404.html") 404 Error
+block about
+    div
+block adsOne
+    div
+block services
+    div
+block animals
+    div
+block vistingHours
+    div
+block member
+    div
+block testimonial
+    div
+block append testimonial
+    section.pageError 
+        .container
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            div 404
+            div Page Not Found
+            div We’re sorry, the page you have looked for does not exist in our website! 
+                br 
+                | Maybe go to our home page or try to use a search?
+            div: a(href="index.html") Go Back To Home

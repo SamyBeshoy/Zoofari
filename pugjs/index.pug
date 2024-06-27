@@ -1,0 +1,347 @@
+include mixin.pug
+doctypehtml
+html(lang="en")
+    block head
+        head
+            +head("Zoofari")
+    body
+        block scroll_btn
+            <span class="top show"><i class="fa-solid fa-arrow-up"></i></span>
+        block sub_header
+            .subheader
+                .container
+                    .boxOne
+                        span <i class="fa-solid fa-location-dot"></i> 123 Street, New York, USA
+                        span <i class="fa-regular fa-clock"></i> Mon - Fri : 09.00 AM - 09.00 PM
+                    .boxTwo
+                        span <i class="fa-solid fa-phone"></i> +012 345 6789
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        <i class="fa-brands fa-instagram"></i>
+        block header
+            header
+                .container 
+                    .logo
+                        a(href="index.html") 
+                            img(src="imgs/icons/icon-10.png", alt="logo") 
+                            span Zoofari
+                    nav
+                        span: a.active(href="index.html") Home
+                        span: a(href="about.html") About 
+                        span: a(href="services.html") Services
+                        span.page#pageMenu
+                            a(href="#page") Pages 
+                            #menubar 
+                                span: a(href="animals.html") Our Animals
+                                span: a(href="membership.html") Membership
+                                span: a(href="visitingHour.html") Visiting Hour
+                                span: a(href="testimonial.html") Testimonial
+                                span: a(href="404.html") 404 Page
+                        span: a(href="index.html") Contact
+                        span: a.box(href="index.html") Buy Ticket <i class="fa-solid fa-arrow-right"></i>
+                    .sidenav#sidenav 
+                        div.parent 
+                            div.ch1
+                                img(src="imgs/icons/icon-10.png", alt="Deal Img") 
+                                span: a(href="index.html") Zoofari
+                            div.ch2    
+                                a(href="##" class="closebtn" onclick="closeNav()") &times;
+                        div
+                            a(href="index.html") Home
+                            a(href="about.html") About
+                            a(href="services.html") Services
+                            a(href="animals.html") Our Animals
+                            a(href="membership.html") Membership
+                            a(href="visitingHour.html") Visiting Hour
+                            a(href="testimonial.html") Testimonial
+                            a(href="404.html") 404 Page
+                            a(href="index.html") Contact
+                    .boxThree
+                        <span onclick="openNav()"class="tog"><i class="fa-solid fa-bars"></i></span> 
+        block landing
+            .landing#landing
+                .container
+                    .text Enjoy Wonderful Day 
+                        br 
+                        | With Your Family
+                    .boxs 
+                        .box#boxOne: img(src="imgs/carousel-1.jpg", alt="animal")
+                        .box#boxTwo: img(src="imgs/carousel-2.jpg", alt="animal")
+                        .box#boxThree: img(src="imgs/carousel-3.jpg", alt="animal")
+        block about
+            section.about
+                .container
+                    .boxOne
+                        .smallTitle
+                            span # 
+                            | Welcome To Zoofari
+                        .title Why You Should 
+                            br 
+                            | Visit 
+                            span Zoofari 
+                            | Park!
+                        .paragraph Stet no et lorem dolor et diam, amet duo ut dolore vero  eos. No stet est diam rebum amet diam ipsum. Clita clita labore,  dolor duo nonumy clita sit at, sed sit sanctus dolor eos.
+                        .box 
+                            div <i class="fa-regular fa-circle-check"></i> Free Car Parking
+                            div <i class="fa-regular fa-circle-check"></i> Natural Environment
+                            div <i class="fa-regular fa-circle-check"></i> Professional Guide & Security
+                            div <i class="fa-regular fa-circle-check"></i> World Best Animals
+                        a(href="index.html") Read More
+                    .boxTwo
+                        img(src="imgs/about.jpg", alt="lion image")
+        block adsOne
+            section.adsOne
+                .container
+                    .box
+                        <i class="fa-solid fa-paw"></i>
+                        div 12345
+                        div Total Animal
+                    .box
+                        <i class="fa-solid fa-users"></i>
+                        div 12345
+                        div Total Animal
+                    .box
+                        <i class="fa-solid fa-certificate"></i>
+                        div 12345
+                        div Total Animal
+                    .box
+                        <i class="fa-solid fa-shield-halved"></i>
+                        div 12345
+                        div Total Animal
+        block services
+            section.services
+                .container
+                    .headTitle
+                        .boxOne
+                            .smallTitle
+                                span # 
+                                | Our Services
+                            .title Special Services For
+                                br 
+                                span Zoofari 
+                                | Visitors
+                        .boxTwo
+                            .icon <i class="fa-solid fa-mobile-screen-button"></i>
+                            .info 
+                                div Call for more info
+                                div +012 345 6789
+                    .boxs 
+                        .box
+                            img(src="imgs/icons/icon-2.png", alt="car parking icon")
+                            div Car Parking
+                            div Erat ipsum justo amet duo et 
+                                br
+                                | est duo duo eos lorem sed diam
+                        .box
+                            img(src="imgs/icons/icon-3.png", alt="animal icon")
+                            div Animal Photos
+                            div Erat ipsum justo amet duo et 
+                                br
+                                | est duo duo eos lorem sed diam 
+                        .box
+                            img(src="imgs/icons/icon-4.png", alt="guide icon")
+                            div Guide Services
+                            div Erat ipsum justo amet duo et 
+                                br
+                                | est duo duo eos lorem sed diam 
+                        .box
+                            img(src="imgs/icons/icon-5.png", alt="food icon")
+                            div Food & Beverages
+                            div Erat ipsum justo amet duo et 
+                                br
+                                | est duo duo eos lorem sed diam 
+                        .box
+                            img(src="imgs/icons/icon-6.png", alt="shopping icon")
+                            div Zoo Shopping
+                            div Erat ipsum justo amet duo et 
+                                br
+                                | est duo duo eos lorem sed diam 
+                        .box
+                            img(src="imgs/icons/icon-7.png", alt="wi-fi icon")
+                            div Free Wi-Fi
+                            div Erat ipsum justo amet duo et
+                                br
+                                | est duo duo eos lorem sed diam 
+                        .box
+                            img(src="imgs/icons/icon-8.png", alt="play ground icon")
+                            div Play Ground
+                            div Erat ipsum justo amet duo et 
+                                br
+                                | est duo duo eos lorem sed diam 
+                        .box
+                            img(src="imgs/icons/icon-9.png", alt="rest house icon")
+                            div Rest House
+                            div Erat ipsum justo amet duo et 
+                                br
+                                | est duo duo eos lorem sed diam 
+        block animals
+            section.animals
+                .container
+                    .headTitle
+                        .boxOne
+                            .smallTitle
+                                span # 
+                                | Our Animals
+                            .title Let's See Our
+                                br 
+                                span Zoofari 
+                                | Awsome 
+                                br 
+                                | Animals
+                        .boxTwo: a(href="index.html") Explore More Animals
+                    div(class="gallery")
+                        .gallaeryCon
+                            div 
+                                div(class="photo photo-350x600")
+                                    img(src="imgs/animal-md-1.jpg" alt="Photo 1")
+                                div(class="photo photo-500x600")
+                                    img(src="imgs/animal-lg-1.jpg" alt="Photo 2")
+                            div 
+                                div(class="photo photo-500x600")
+                                    img(src="imgs/animal-lg-2.jpg" alt="Photo 3")
+                                div(class="photo photo-350x600")
+                                    img(src="imgs/animal-md-2.jpg" alt="Photo 4")
+                            div    
+                                div(class="photo photo-350x600")
+                                    img(src="imgs/animal-md-3.jpg" alt="Photo 5")
+                                div(class="photo photo-500x600")
+                                    img(src="imgs/animal-lg-3.jpg" alt="Photo 6")
+        block vistingHours
+            section.vistingHours
+                .container 
+                    .boxOne 
+                        .textOne Visiting Hours
+                        .contentOne
+                            div 
+                                .day Monday
+                                .time 9:00AM - 6:00PM
+                            div 
+                                .day Tuesday
+                                .time 9:00AM - 6:00PM
+                            div 
+                                .day Wednesday
+                                .time 9:00AM - 6:00PM
+                            div 
+                                .day Thursday
+                                .time 9:00AM - 6:00PM
+                            div 
+                                .day Friday
+                                .time 9:00AM - 6:00PM
+                            div 
+                                .day Saturday
+                                .time 9:00AM - 12:00PM
+                            div 
+                                .day Sunday
+                                .time Closed
+                    .boxTwo
+                        .textTwo Contact Info
+                        .contentTwo
+                            div 
+                                .place Office
+                                .value 123 Street, New York, USA
+                            div 
+                                .place Zoo
+                                .value 123 Street, New York, USA
+                            div
+                                .place Ticket
+                                .value: a(href="mailto:ticket@example.com")  ticket@example.com
+                            div
+                                .place Phone
+                                .value: a(href="tel:+012 345 6789") +012 345 6789
+                            div
+                                .place Support
+                                .value: a(href="mailto:support@example.com") support@example.com
+        block member
+            section.member
+                .container
+                    .headTitle
+                        .boxOne
+                            .smallTitle
+                                span # 
+                                | Membership
+                            .title You Can Be A Proud
+                                br 
+                                | Member Of 
+                                span Zoofari 
+                        .boxTwo: a(href="index.html") Special Pricing
+                    .boxs 
+                        .box
+                            div 01
+                            div Popular
+                            div $99.00
+                            div <i class="fa-solid fa-check"></i> 
+                                span 10% discount
+                            div <i class="fa-solid fa-check"></i> 
+                                span 2 adult and 2 child
+                            div <i class="fa-solid fa-check"></i> 
+                                span Free animal exhibition
+                            div: a(href="index.html") Get Started
+                        .box
+                            div 02
+                            div Standard
+                            div $149.00
+                            div <i class="fa-solid fa-check"></i> 
+                                span 15% discount
+                            div <i class="fa-solid fa-check"></i> 
+                                span 4 adult and 4 child
+                            div <i class="fa-solid fa-check"></i> 
+                                span Free animal exhibition
+                            div: a(href="index.html") Get Started
+                        .box
+                            div 03
+                            div Premium
+                            div $199.00
+                            div <i class="fa-solid fa-check"></i> 
+                                span 20% discount
+                            div <i class="fa-solid fa-check"></i> 
+                                span 6 adult and 6 child
+                            div <i class="fa-solid fa-check"></i> 
+                                span Free animal exhibition
+                            div: a(href="index.html") Get Started
+        block testimonial
+            section.testimonial
+                .container
+                    .text Our Clients Say!
+                    div: img(src="imgs/testimonial-1.jpg", alt="human")
+                    .paragraph 
+                        div Clita clita tempor justo dolor ipsum amet kasd amet duo 
+                            br
+                            | duo duo labore sed sed. Magna ut diam sit et amet tempor
+                            br 
+                            | clita erat magna elitr erat sit sit erat at rebum 
+                            br
+                            | justo sea clita.
+                        div Client Name
+                        div Profession
+        block footer
+            .footer_one
+                .container
+                    .boxs
+                        .box_one
+                            .tit_f Info
+                            div <i class="fa-solid fa-location-dot"></i> 123 Street, New York, USA
+                            div <i class="fa-solid fa-phone"></i> +012 345 6789
+                            div <i class="fa-solid fa-envelope"></i> info@example.com
+                            div <i class="fa-brands fa-twitter"></i></i><i class="fa-brands fa-facebook"></i><i class="fa-brands fa-youtube"></i><i class="fa-brands fa-linkedin-in"></i>
+                        .box_two
+                            .tit_f Business Hours
+                            div Monday - Friday
+                            div 09:00 am - 07:00 pm
+                            div Saturday
+                            div 09:00 am - 12:00 pm
+                            div Sunday
+                            div Closed
+                        .box_three
+                            .tit_f Newsletter
+                            div Dolor amet sit justo amet elitr 
+                                br 
+                                |clita ipsum elitr est.
+                            div 
+                                input(type="text", name="yourMail", placeholder="Your Email")
+                                input(type="button", value="Sign Up")
+                    footer Copyright 2024 © by 
+                        span Beshoy Samy.
+        block scripts 
+            script(src="script/dist/app.js")
+            script(src="script/dist/main.js")
