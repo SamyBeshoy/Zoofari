@@ -1,0 +1,57 @@
+// import variables file
+@use "variables" as *; 
+.about {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .boxOne {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .paragraph {
+                font-size: $font_six;
+                color: $sec_color;
+            }
+            .box {
+                font-size: $font_six;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                font-family: "exo 2";
+                i {
+                    color: $main_color;
+                }
+            }
+            a {
+                font-size: $font_six;
+                background-color: $main_color;
+                padding: 10px 20px;
+                color: white;
+                text-decoration: none;
+                width: fit-content;
+            }
+        }
+        .boxTwo {
+            img {
+                border: 5px solid $main_color;
+                padding: 10px;
+                width: 21.875em;
+            }
+        }
+    }
+}
+@media (max-width: 900px) {
+    .about {
+        .container {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center; 
+            gap: 20px;
+            .boxOne {
+                align-items: center;
+            }
+        }
+    }
+}

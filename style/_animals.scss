@@ -1,0 +1,67 @@
+// import variables file
+@use "variables" as *;
+.animals {
+    .container {
+        .headTitle {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 30px;
+            .boxTwo {
+                background-color: $main_color;
+                padding: 10px 20px;
+                font-size: $font_six;
+                a {
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .gallaeryCon {
+                display: flex;
+                gap: 20px;
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    img {
+                        width: 18.75em;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1000px) {
+    .animals {
+        .container {
+            .gallery {
+                .gallaeryCon {
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .animals {
+        .container {
+            .headTitle {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                gap: 20px;
+            }
+            .gallery {
+                .gallaeryCon {
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,134 @@
+// import variables file
+@use "variables" as *;
+.footer_one {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.582), rgba(0, 0, 0, 0.644)), url(../imgs/bg-2.jpg);
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+    padding: $padding 0;
+    font-size: $font_six;
+    .container {
+        .boxs {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: $padding;
+            .box_one {
+                .tit_f {
+                    color: white;
+                    font-family: "exo 2"; 
+                    font-weight: bold;
+                    margin-bottom: 15px;
+                }
+                div:nth-child(2),
+                div:nth-child(3),
+                div:nth-child(4) {
+                    color: rgb(255, 255, 255);
+                    i {
+                        margin: 10px 0;
+                    }
+                }
+                div:nth-child(5) {
+                    margin-top: 15px;
+                    i {
+                        margin: 0 10px 0 0;
+                        padding: 8px;
+                        border-radius: 50%;
+                        cursor: pointer;
+                        background-color: white;
+                    }
+                }
+            }
+            .box_two {
+                .tit_f {
+                    color: white;
+                    font-family: "exo 2"; 
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                }
+                div:nth-child(2),
+                div:nth-child(4),
+                div:nth-child(6) {
+                    color: rgb(255, 255, 255);
+                    margin-top: 15px;
+                }
+                div:nth-child(3),
+                div:nth-child(5),
+                div:nth-child(7) {
+                    color: rgba(255, 255, 255, 0.562);
+                }
+            }
+            .box_three {
+                .tit_f {
+                    color: white;
+                    font-family: "exo 2"; 
+                    font-weight: bold;
+                }
+                div:nth-child(2) {
+                    color: rgb(255, 255, 255);
+                    margin: 15px 0;
+                }
+                div:nth-child(3) {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    input:nth-child(1) {
+                        background-color: transparent;
+                        color: white;
+                        border: 2px solid rgba(255, 255, 255, 0.562);
+                        padding: 15px;
+                        border-radius: 10px;
+                        &::placeholder {
+                            color: rgb(255, 255, 255);
+                        }
+                    }
+                    input:nth-child(2) {
+                        position: absolute;
+                        margin-right: 10px;
+                        background-color: $main_color;
+                        border: unset;
+                        cursor: pointer;
+                        color: white;
+                        padding: 5px;
+                        border-radius: 5px;
+                    }
+                } 
+            }
+        }
+        footer {
+            border-top: 1px solid rgb(255, 255, 255);
+            text-align: center;
+            color: white;
+            padding-top: $padding; 
+            span {
+                color: $main_color;
+                font-weight: bold;
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .footer_one {
+        .container {
+            .boxs {
+                flex-direction: column;     
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                .box_one {
+                    div:nth-child(5) {
+                        i {
+                            margin: 0 5px;
+                        }
+                    }
+                }
+                .box_two {
+                    margin: 50px 0;
+                }
+            }
+        }
+    }
+}

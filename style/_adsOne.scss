@@ -1,0 +1,41 @@
+// import variables file
+@use "variables" as *; 
+.adsOne {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.582), rgba(0, 0, 0, 0.644)), url(../imgs/bg-1.jpg);
+    background-color: $main_color;
+    height: fit-content;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+        .box {
+            text-align: center;
+            color: white;
+            i {
+                color: $main_color;
+                font-size: $font_five;
+            }
+            div:nth-child(2) {
+                font-weight: bold;
+                font-size: $font_four;                
+            }
+            div:nth-child(3) {
+                font-size: $font_six;
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .adsOne {
+        .container  {
+            flex-direction: column;
+            gap: 30px;
+        }
+    }
+}

@@ -1,0 +1,148 @@
+// import variables file
+@use "variables" as *;
+.member {
+    .container {
+        .headTitle {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 30px;
+            .boxTwo {
+                background-color: $main_color;
+                padding: 10px 20px;
+                a {
+                    color: white;
+                    text-decoration: none;
+                    font-size: $font_six;
+                }
+            }
+        }
+        .boxs {
+            display: flex;
+            justify-content: space-between;
+            .box:nth-child(1) {
+                background: linear-gradient(0deg, rgba(0, 0, 0, 0.582), rgba(0, 0, 0, 0.644)), url(../imgs/animal-lg-1.jpg);
+                background-color: $main_color;
+                height: fit-content;
+                width: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-clip: border-box;
+                width: 18.75em;
+                height: fit-content;
+            }
+            .box:nth-child(2) {
+                background: linear-gradient(0deg, rgba(0, 0, 0, 0.582), rgba(0, 0, 0, 0.644)), url(../imgs/animal-lg-2.jpg);
+                background-color: $main_color;
+                height: fit-content;
+                width: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-clip: border-box;
+                width: 18.75em;
+                height: fit-content;
+            }
+            .box:nth-child(3) {
+                background: linear-gradient(0deg, rgba(0, 0, 0, 0.582), rgba(0, 0, 0, 0.644)), url(../imgs/animal-lg-3.jpg);
+                background-color: $main_color;
+                height: fit-content;
+                width: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-clip: border-box;
+                width: 18.75em;
+                height: fit-content;
+            }
+            .box {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                padding: 60px 40px;
+                div:nth-child(1) {
+                    color: transparent;
+                    -webkit-text-stroke: 2px $main_color;
+                    font-size: $font_one;
+                    font-weight: bold;
+                }
+                div:nth-child(2) {
+                    color: white;
+                    font-family: "exo 2";
+                    font-size: $font_three;
+                    font-weight: bold;
+                }
+                div:nth-child(3) {
+                    color: $main_color;
+                    font-size: $font_three;
+                    font-weight: bold;
+                }
+                div:nth-child(4),
+                div:nth-child(5),
+                div:nth-child(6) {
+                    color: white;
+                    font-size: $font_six; 
+                    i {
+                        margin-right: 10px;
+                        color: $main_color;
+                        font-size: $font_five !important; 
+                    }
+                }
+                div:nth-child(6) {
+                    margin-bottom: 10px;
+                }
+                div:nth-child(7) a {
+                    text-decoration: none;
+                    color: white;
+                    border: 1px solid white;
+                    padding: 10px 20px;
+                    transition: .5s;
+                    font-size: $font_six; 
+                    &:hover {
+                        color: black;
+                        background-color: #F3F4F5;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .member {
+        .container {
+            .headTitle {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                gap: 20px;
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .member {
+        .container {
+            .headTitle {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                gap: 20px;
+            }
+        }
+    }
+}
+@media (max-width: 1005px) {
+    .member {
+        .container {
+            .boxs {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+            }
+        }
+    }
+}

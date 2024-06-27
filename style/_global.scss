@@ -1,0 +1,99 @@
+// import variables file
+@use "variables" as *; 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: sans-serif;
+    animation: animation_for_body 0.75s;
+}
+.container {
+    padding: 0 15px;
+    margin: 0 auto;
+}
+@media (max-width: 370px) {
+    html {
+        font-size: 13px;
+    }
+}
+@media (max-width: 301px) {
+    html {
+        font-size: 11px;
+    }
+}
+@keyframes animation_for_body {
+    from {
+        opacity: 0;
+        transform: translatey(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translatey(0px);
+    }
+}
+// -----media queries from bootstrap-----
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+    .container {
+        width: 550px;
+    }
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+    .container {
+        width: 750px;
+    }
+}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    .container {
+        width: 970px;
+    }
+}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+// global rules for html
+section {
+    padding: $padding 0;
+}
+.smallTitle {
+    font-size: $font_six;
+    span {
+        color: $main_color;
+    }
+    color: $sec_color;
+}
+.title {
+    font-size: $font_three;
+    font-family: "exo 2";
+    font-weight: bold;
+    span {
+        color: $main_color;
+    }
+}
+.top {
+    &.show {
+        display: none;
+    }
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: $main_color;
+    color: white;
+    font-weight: bold;
+    font-size: $font_six;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 454544444;
+    cursor: pointer;
+    transition: 0.2s;
+}

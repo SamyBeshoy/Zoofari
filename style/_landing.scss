@@ -1,0 +1,82 @@
+// import variables file
+@use "variables" as *;
+.landing {
+    background: linear-gradient(0deg, rgb(0 0 0 / 30%), rgb(0 0 0 / 30%)), url(../imgs/carousel-1.jpg);
+    background-color: $main_color;
+    height: calc(100vh - 100px);
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+    .container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: inherit;
+        .text {
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            line-height: 1.5;
+            font-size: $font_one;
+            font-family: "exo 2";
+        }
+        .boxs {
+            background-color: white;
+            position: absolute;
+            bottom: 20px;
+            display: flex;
+            height: fit-content;
+            padding: 10px;
+            border-radius: 10px;
+            gap: 10px;
+            .box {
+                height: 3.75em;
+                cursor: pointer;
+                img {
+                    height: inherit;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}
+.landing_two {
+    height: 50vh;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.582), rgba(0, 0, 0, 0.644)), url(../imgs/bg-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    .container {
+        height: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        div:nth-child(1) {
+            font-family: "exo 2"; 
+            font-weight: bold;
+            font-size: $font_one;
+            margin: 10px 0;
+        }
+        div:nth-child(2) {
+            font-size: $font_six;
+            margin: 10px 0;
+            a {
+                color: inherit;
+                text-decoration: none;
+            }
+            a:nth-child(2) {
+                color: $main_color;
+            }
+        }
+    }
+}
+@media (max-width: 1000px) {
+    .landing {
+        height: calc(100vh - 70px);
+    }
+}

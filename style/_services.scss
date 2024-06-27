@@ -1,0 +1,89 @@
+// import variables file
+@use "variables" as *;
+.services {
+    .container {
+        .headTitle {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 30px;
+            .boxOne {
+                width: 50%;
+            }
+            .boxTwo {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                width: 50%;
+                background-color: $main_color; 
+                color: white;
+                .icon i {
+                    font-size: $font_one;
+                    color: white;
+                    margin-left: 40px;
+                    margin-right: 20px;
+                }
+                .info {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    font-size: $font_six;
+                    div:nth-child(2) {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+        .boxs {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 40px;
+            .box {
+                img {
+                    width: 3.75em;
+                }
+                div:nth-child(2) {
+                    margin: 15px 0;
+                    font-weight: bold;
+                    font-size: $font_five;
+                }
+                div:nth-child(3) {
+                    color: $sec_color;
+                    font-size: $font_six;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .services {
+        .container {
+            .headTitle {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+                .boxOne {
+                    width: 100%;
+                    text-align: center;
+                }
+                .boxTwo {
+                    padding: 20px;
+                    width: 100%;
+                    justify-content: center;
+                    .icon i {
+                        font-size: $font_one;
+                        color: white;
+                        margin-left: 0;
+                        margin-right: 20px;
+                    }
+                }
+            }
+            .boxs {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    }
+}

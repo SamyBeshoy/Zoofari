@@ -1,0 +1,36 @@
+// import variables file
+@use "variables" as *;
+.pageError {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        text-align: center;
+        i {
+            color: $main_color;
+            font-size: $font_one;
+        }
+        div:nth-child(2) {
+            font-weight: bold;
+            font-size: $font_two;
+        }
+        div:nth-child(3) {
+            font-size: $font_four;
+        }       
+        div:nth-child(4) {
+            font-size: $font_six;
+            color: $sec_color;
+            margin-bottom: 15px;
+        }
+        div:nth-child(5) a {
+            font-size: $font_six;
+            color: white;
+            text-decoration: none;
+            background-color: $main_color;
+            padding: 10px 20px;
+            font-size: $font_six;
+        }
+    }
+}

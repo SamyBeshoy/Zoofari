@@ -1,0 +1,99 @@
+// import variables file
+@use "variables" as *;
+.vistingHours {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.582), rgba(0, 0, 0, 0.644)), url(../imgs/bg-2.jpg);
+    background-color: $main_color;
+    height: fit-content;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+    color: white;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        gap: 10%;
+        .boxOne {
+            width: 45%;
+            .textOne {
+                font-family: "exo 2";
+                margin-bottom: 30px;
+                font-weight: bold;
+                font-size: $font_four;
+            }
+            .contentOne {
+                background-color: rgba(0, 0, 0, 0.411);
+                font-size: $font_six;
+                div {
+                    display: flex;
+                    justify-content: space-between;
+                    border-bottom: 1px solid rgb(92, 87, 87);
+                    padding: 5px;
+                    .day {
+                        border-bottom: none;
+                    }
+                }
+                div:last-child {
+                    border-bottom: none;
+                }
+            }
+        }
+        .boxTwo {
+            width:45%;
+            .textTwo {
+                font-family: "exo 2";
+                margin-bottom: 30px;
+                font-weight: bold;
+                font-size: $font_four;
+            }
+            .contentTwo {
+                background-color: rgba(0, 0, 0, 0.411);
+                font-size: $font_six;
+                div {
+                    display: flex;
+                    justify-content: space-between;
+                    border-bottom: 1px solid rgb(92, 87, 87);
+                    padding: 5px;
+                    .place {
+                        border-bottom: none;
+                    }
+                    .value a {
+                        text-decoration: none;
+                        color: white;
+                    }
+                }
+                div:last-child {
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .vistingHours {
+        .container {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            text-align: center;
+            .boxOne {
+                min-width: fit-content;
+                .contentOne  {
+                    div {
+                        padding: 0.625em;
+                    }
+                }
+            }
+            .boxTwo {
+                min-width: fit-content;
+                .contentTwo  {
+                    div {
+                        padding: 0.625em;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+// import global file
+@use "global" as *; 
+
+// import variables file
+@use "variables" as *; 
+
+// import header file
+@use "header" as *; 
+
+// import landing file
+@use "landing" as *; 
+
+// import about file
+@use "about" as *; 
+
+// import adsOne file
+@use "adsOne" as *; 
+
+// import services file
+@use "services" as *; 
+
+// import animals file
+@use "animals" as *; 
+
+// import vistingHours file
+@use "vistingHours" as *; 
+
+// import member file
+@use "member" as *;
+
+// import testimonial file
+@use "testimonial" as *;
+
+// import footer file
+@use "footer" as *; 
+
+// import pageError file
+@use "pageError" as *; 
+
+// make fonts and responsive and  make every thing width (img, text)
